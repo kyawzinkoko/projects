@@ -1,0 +1,254 @@
+#kyaw-intro{
+	background:url("photo/charles-456501-unsplash.jpg")no-repeat fixed center;
+    background-size:cover;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    font-size: 15px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0 black;
+}
+
+.caption-intro{
+	padding-top:150px;
+	padding-bottom:150px;
+	text-align:center;
+}
+.wapper{
+    color:#f8f9fa;
+}
+.navbar-brand{
+    font-size:30px;
+    font-family: 'Pacifico', cursive;
+    color:#f8f9fa;
+}
+.cta-intro a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    background: transparent;
+    padding: 11px 40px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+}
+.avatar {
+  height:400px;
+}
+#about-me{
+    transition: all 1s ease-out;
+    padding-top:50px;
+
+}
+.thin-text{
+    font-size:40px;
+    font-family: 'Anton', sans-serif;
+     margin-top:10px;
+   text-align: center;
+}
+.hint-text{
+    font-size:25px;
+    font-family: 'Poppins', sans-serif;
+    margin-top:20px;
+    text-align: center;
+}
+.int-text{
+    font-size:15px;
+    margin-top:20px;
+    text-align: justify
+}
+.text-services{
+    text-align: center;
+    font-size:50px;
+    margin-top:50px;
+    font-family: 'Anton', sans-serif;
+}
+.services-selection{
+    padding: 5px;
+    margin-bottom: 40px;
+    background: #fff;
+    border:5px solid #fff;
+    border-radius: 8px;
+    border-width:50px;
+    box-shadow: 0 9px 25px;
+    margin-top:30px;
+}
+.services-title{
+    text-align:center;
+}
+.services-title p {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top:20px;
+}
+#cta-main {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(photo/4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.cta-main-detail a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #212529;
+    background: #fff;
+    padding: 11px 40px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+}
+.work-title{
+    text-align:center;
+    margin-top:40px;
+    font-family: 'Anton', sans-serif;
+    font-size:40px;
+}
+
+@media screen and (max-width: 768px){
+
+.navbar .navbar-nav .nav-link {
+    text-align: center;
+    margin: 7px 5px;
+ }
+.Share-icon{
+   bottom:70px !important;
+   left:51px !important;
+ }
+}
+@media screen and (max-width: 520px){
+.navbar .navbar-nav .nav-link {
+    text-align: center;
+    margin: 7px 5px;
+ }
+.Share-icon{
+   bottom:70px !important;
+   left:51px !important;
+ }
+}
+/*---------
+Share-icon */
+.Share-icon{
+    position:fixed;
+    bottom:80px;
+    right:88%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    width:70px;
+    height:70px;
+}
+.Share-icon ul{
+    position:relative;
+    margin:0%;
+    padding: 0%;
+    width:100%;
+    height: 100%;
+}
+.Share-icon ul li{
+    position: absolute;
+    top:0%;
+    left:0%;
+    list-style:none;
+    width:100%;
+    height: 100%;
+    border-radius: 50px;
+    transition:0.5s;
+    overflow: hidden;
+    background:#6c757d;
+}
+.Share-icon ul.active li{
+    transform: scale(0.95);
+}
+.Share-icon ul li a{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    color:#ffffff;
+    transition: .4s;
+}
+.Share-icon ul li a .fab{
+    transform: rotate(-45deg);
+}
+.Toggle-icon{
+    position: absolute;
+    top: 0%;
+    right:0%;
+    width: 100%;
+    height: 100%;
+    background:#0C9;
+    transform: scale(0.95);
+    overflow: hidden;
+    border-radius: 50px;
+    z-index: 6;
+    cursor: pointer;
+    text-align:center;
+    box-shadow: 0 10px 20px;
+}
+.fa-share-alt{
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    margin-top:14px;
+    margin-left:10px;
+    transform: rotate(-45deg);
+
+}
+.fa-share-alt.avtive:before{
+    content:'/';
+}
+.Share-icon ul.active li:nth-child(1){
+    top:-100%;
+    left:-100%;
+    transition-delay:0.5s; 
+}
+.Share-icon ul.active li:nth-child(2){
+    top:-100%;
+    left:0%;
+    transition-delay:0.2s; 
+}
+.Share-icon ul.active li:nth-child(3){
+    top:-100%;
+    left:100%;
+    transition-delay:0.4s; 
+}
+.Share-icon ul.active li:nth-child(4){
+    top:0%;
+    left:100%;
+    transition-delay:0.6s; 
+}
+.Share-icon ul.active li:nth-child(5){
+    top:100%;
+    left:100%;
+    transition-delay:0.8s;
+    transform: rotate(55deg); 
+}
+.Share-icon ul.active li:nth-child(1):hover{
+    background:#3b5997;
+     transition-delay:0.1s;
+}
+
+.Share-icon ul.active li:nth-child(2):hover{
+    background:#1da1f2;
+     transition-delay:0.1s;
+}
+.Share-icon ul.active li:nth-child(3):hover{
+    background:#1573b1;
+     transition-delay:0.1s;
+}
+.Share-icon ul.active li:nth-child(4):hover{
+    background:#24292e;
+     transition-delay:0.1s;
+}
+.Share-icon ul.active li:nth-child(5):hover{
+    background:#00ff00;
+     transition-delay:0.1s;
+}
